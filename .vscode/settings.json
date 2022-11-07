@@ -1,0 +1,14 @@
+{
+    "al.assemblyProbingPaths": [
+        "./.netpackages",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160\\Service",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160",
+        "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\160\\RoleTailored Client",
+        "C:\\Windows\\assembly",
+        "C:\\Windows\\Microsoft.NET\\assembly",
+        "C:\\Program Files\\Reference Assemblies\\Microsoft\\Microsoft Identity Extensions\\1.0",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\160\\Service\\Add-ins",
+        "C:\\Program Files (x86)\\Open XML SDK\\V2.5\\lib\\DocumentFormat.OpenXml.dll"
+    ],
+    "al.browser": "Chrome"
+}

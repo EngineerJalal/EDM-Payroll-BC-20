@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Text000">
+          <DataField>Text000</DataField>
+        </Field>
+        <Field Name="Text001">
+          <DataField>Text001</DataField>
+        </Field>
+        <Field Name="Text002">
+          <DataField>Text002</DataField>
+        </Field>
+        <Field Name="Text003">
+          <DataField>Text003</DataField>
+        </Field>
+        <Field Name="Gender_2_">
+          <DataField>Gender_2_</DataField>
+        </Field>
+        <Field Name="Gender_1_">
+          <DataField>Gender_1_</DataField>
+        </Field>
+        <Field Name="EmployeeArabicFirstName">
+          <DataField>EmployeeArabicFirstName</DataField>
+        </Field>
+        <Field Name="EmployeeArabicName">
+          <DataField>EmployeeArabicName</DataField>
+        </Field>
+        <Field Name="EmployeeArabicLastName">
+          <DataField>EmployeeArabicLastName</DataField>
+        </Field>
+        <Field Name="EmployeeArabicMiddleName">
+          <DataField>EmployeeArabicMiddleName</DataField>
+        </Field>
+        <Field Name="EmployeeArabicMotherName">
+          <DataField>EmployeeArabicMotherName</DataField>
+        </Field>
+        <Field Name="EmployeeArabicPlaceofBirth">
+          <DataField>EmployeeArabicPlaceofBirth</DataField>
+        </Field>
+        <Field Name="EmployeeBirthDate">
+          <DataField>EmployeeBirthDate</DataField>
+        </Field>
+        <Field Name="EmployeeArabicElimination">
+          <DataField>EmployeeArabicElimination</DataField>
+        </Field>
+        <Field Name="EmployeeRegisterNo">
+          <DataField>EmployeeRegisterNo</DataField>
+        </Field>
+        <Field Name="SocialStatus5">
+          <DataField>SocialStatus5</DataField>
+        </Field>
+        <Field Name="SocialStatus4">
+          <DataField>SocialStatus4</DataField>
+        </Field>
+        <Field Name="SocialStatus3">
+          <DataField>SocialStatus3</DataField>
+        </Field>
+        <Field Name="SocialStatus2">
+          <DataField>SocialStatus2</DataField>
+        </Field>
+        <Field Name="SocialStatus1">
+          <DataField>SocialStatus1</DataField>
+        </Field>
+        <Field Name="EmployeeArabicGovernorate">
+          <DataField>EmployeeArabicGovernorate</DataField>
+        </Field>
+        <Field Name="EmployeeArabicCity">
+          <DataField>EmployeeArabicCity</DataField>
+        </Field>
+        <Field Name="EmployeeArabicDistrict">
+          <DataField>EmployeeArabicDistrict</DataField>
+        </Field>
+        <Field Name="EmployeeArabicStreet">
+          <DataField>EmployeeArabicStreet</DataField>
+        </Field>
+        <Field Name="EmployeeArabicBuilding">
+          <DataField>EmployeeArabicBuilding</DataField>
+        </Field>
+        <Field Name="EmployeeArabicFloor">
+          <DataField>EmployeeArabicFloor</DataField>
+        </Field>
+        <Field Name="EmployeePhoneNo">
+          <DataField>EmployeePhoneNo</DataField>
+        </Field>
+        <Field Name="EmployeeEmploymentDate">
+          <DataField>EmployeeEmploymentDate</DataField>
+        </Field>
+        <Field Name="EmployeeArabicJobTitle">
+          <DataField>EmployeeArabicJobTitle</DataField>
+        </Field>
+        <Field Name="EmployeeBasicPay">
+          <DataField>EmployeeBasicPay</DataField>
+        </Field>
+        <Field Name="EmployeeBasicPayFormat">
+          <DataField>EmployeeBasicPayFormat</DataField>
+        </Field>
+        <Field Name="CompanyAdressDetails">
+          <DataField>CompanyAdressDetails</DataField>
+        </Field>
+        <Field Name="CompanyInfoArabicComercialCity">
+          <DataField>CompanyInfoArabicComercialCity</DataField>
+        </Field>
+        <Field Name="CompanyInfoCommercialNo">
+          <DataField>CompanyInfoCommercialNo</DataField>
+        </Field>
+        <Field Name="CompanyInfoArabicName">
+          <DataField>CompanyInfoArabicName</DataField>
+        </Field>
+        <Field Name="CompanyInfoPhoneNo">
+          <DataField>CompanyInfoPhoneNo</DataField>
+        </Field>
+        <Field Name="MonthlyPay">
+          <DataField>MonthlyPay</DataField>
+        </Field>
+        <Field Name="CompanyInfoCompanyOwner">
+          <DataField>CompanyInfoCompanyOwner</DataField>
+        </Field>
+        <Field Name="InvDate">
+          <DataField>InvDate</DataField>
+        </Field>
+        <Field Name="CompanyInfoRegistrationNo">
+          <DataField>CompanyInfoRegistrationNo</DataField>
+        </Field>
+        <Field Name="WeeklyPay">
+          <DataField>WeeklyPay</DataField>
+        </Field>
+        <Field Name="ArabicAmount">
+          <DataField>ArabicAmount</DataField>
+        </Field>
+        <Field Name="MonthHours">
+          <DataField>MonthHours</DataField>
+        </Field>
+        <Field Name="MonthHoursFormat">
+          <DataField>MonthHoursFormat</DataField>
+        </Field>
+        <Field Name="ArabicName">
+          <DataField>ArabicName</DataField>
+        </Field>
+        <Field Name="Employee_No_">
+          <DataField>Employee_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

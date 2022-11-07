@@ -1,0 +1,37 @@
+{
+  "id": "e3598e59-30f5-4fb6-85a8-71fba906be83",
+  "name": "Coders Payroll",
+  "publisher": "Coders",
+  "version": "20.0.0.20",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "logo": "logo/Coders.JPG",
+  "dependencies": [
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "20.0.0.0"
+      }
+  ],
+  "screenshots": [],
+  "idRanges": [
+    {
+      "from": 98000,
+      "to": 98999
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://PayrollBC20.com/help/",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.2"
+}

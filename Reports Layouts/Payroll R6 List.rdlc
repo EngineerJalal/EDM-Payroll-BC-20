@@ -1,0 +1,800 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyInfo__Arabic_Name_">
+          <DataField>CompanyInfo__Arabic_Name_</DataField>
+        </Field>
+        <Field Name="CompanyInfo__Arabic_Trading_Name_">
+          <DataField>CompanyInfo__Arabic_Trading_Name_</DataField>
+        </Field>
+        <Field Name="VarRegNoCo">
+          <DataField>VarRegNoCo</DataField>
+        </Field>
+        <Field Name="VarYear">
+          <DataField>VarYear</DataField>
+        </Field>
+        <Field Name="VarEmplNo">
+          <DataField>VarEmplNo</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_First_Name_">
+          <DataField>Employee__Arabic_First_Name_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Middle_Name_">
+          <DataField>Employee__Arabic_Middle_Name_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Last_Name_">
+          <DataField>Employee__Arabic_Last_Name_</DataField>
+        </Field>
+        <Field Name="VarRegNo">
+          <DataField>VarRegNo</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Job_Title_">
+          <DataField>Employee__Arabic_Job_Title_</DataField>
+        </Field>
+        <Field Name="VarMonthly">
+          <DataField>VarMonthly</DataField>
+        </Field>
+        <Field Name="VarDaily">
+          <DataField>VarDaily</DataField>
+        </Field>
+        <Field Name="VarHour">
+          <DataField>VarHour</DataField>
+        </Field>
+        <Field Name="VarSingle">
+          <DataField>VarSingle</DataField>
+        </Field>
+        <Field Name="VarMarried">
+          <DataField>VarMarried</DataField>
+        </Field>
+        <Field Name="VarWidowed">
+          <DataField>VarWidowed</DataField>
+        </Field>
+        <Field Name="VarDivorced">
+          <DataField>VarDivorced</DataField>
+        </Field>
+        <Field Name="VarStDay">
+          <DataField>VarStDay</DataField>
+        </Field>
+        <Field Name="EligibleChild">
+          <DataField>EligibleChild</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Governorate_">
+          <DataField>Employee__Arabic_Governorate_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Elimination_">
+          <DataField>Employee__Arabic_Elimination_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Building_">
+          <DataField>Employee__Arabic_Building_</DataField>
+        </Field>
+        <Field Name="Employee_Floor">
+          <DataField>Employee_Floor</DataField>
+        </Field>
+        <Field Name="Employee__Mailbox_ID_">
+          <DataField>Employee__Mailbox_ID_</DataField>
+        </Field>
+        <Field Name="Employee__Phone_No__">
+          <DataField>Employee__Phone_No__</DataField>
+        </Field>
+        <Field Name="Employee__Mobile_Phone_No__">
+          <DataField>Employee__Mobile_Phone_No__</DataField>
+        </Field>
+        <Field Name="Employee__E_Mail_">
+          <DataField>Employee__E_Mail_</DataField>
+        </Field>
+        <Field Name="VarSalary">
+          <DataField>VarSalary</DataField>
+        </Field>
+        <Field Name="VarSalaryFormat">
+          <DataField>VarSalaryFormat</DataField>
+        </Field>
+        <Field Name="VarSalary_Control1000000006">
+          <DataField>VarSalary_Control1000000006</DataField>
+        </Field>
+        <Field Name="VarSalary_Control1000000006Format">
+          <DataField>VarSalary_Control1000000006Format</DataField>
+        </Field>
+        <Field Name="VarBonus">
+          <DataField>VarBonus</DataField>
+        </Field>
+        <Field Name="VarBonusFormat">
+          <DataField>VarBonusFormat</DataField>
+        </Field>
+        <Field Name="VarFAllow">
+          <DataField>VarFAllow</DataField>
+        </Field>
+        <Field Name="VarFAllowFormat">
+          <DataField>VarFAllowFormat</DataField>
+        </Field>
+        <Field Name="VarCar">
+          <DataField>VarCar</DataField>
+        </Field>
+        <Field Name="VarCarFormat">
+          <DataField>VarCarFormat</DataField>
+        </Field>
+        <Field Name="VarFood">
+          <DataField>VarFood</DataField>
+        </Field>
+        <Field Name="VarFoodFormat">
+          <DataField>VarFoodFormat</DataField>
+        </Field>
+        <Field Name="VarAllow">
+          <DataField>VarAllow</DataField>
+        </Field>
+        <Field Name="VarAllowFormat">
+          <DataField>VarAllowFormat</DataField>
+        </Field>
+        <Field Name="VarScholar">
+          <DataField>VarScholar</DataField>
+        </Field>
+        <Field Name="VarScholarFormat">
+          <DataField>VarScholarFormat</DataField>
+        </Field>
+        <Field Name="VarBirth">
+          <DataField>VarBirth</DataField>
+        </Field>
+        <Field Name="VarBirthFormat">
+          <DataField>VarBirthFormat</DataField>
+        </Field>
+        <Field Name="VarDeathAllow">
+          <DataField>VarDeathAllow</DataField>
+        </Field>
+        <Field Name="VarDeathAllowFormat">
+          <DataField>VarDeathAllowFormat</DataField>
+        </Field>
+        <Field Name="VarTotalIn">
+          <DataField>VarTotalIn</DataField>
+        </Field>
+        <Field Name="VarTotalInFormat">
+          <DataField>VarTotalInFormat</DataField>
+        </Field>
+        <Field Name="VarTotalExemp">
+          <DataField>VarTotalExemp</DataField>
+        </Field>
+        <Field Name="VarTotalExempFormat">
+          <DataField>VarTotalExempFormat</DataField>
+        </Field>
+        <Field Name="VarIncome">
+          <DataField>VarIncome</DataField>
+        </Field>
+        <Field Name="VarIncomeFormat">
+          <DataField>VarIncomeFormat</DataField>
+        </Field>
+        <Field Name="VarTax">
+          <DataField>VarTax</DataField>
+        </Field>
+        <Field Name="VarTaxFormat">
+          <DataField>VarTaxFormat</DataField>
+        </Field>
+        <Field Name="VarRep">
+          <DataField>VarRep</DataField>
+        </Field>
+        <Field Name="VarRepFormat">
+          <DataField>VarRepFormat</DataField>
+        </Field>
+        <Field Name="VarWAllow">
+          <DataField>VarWAllow</DataField>
+        </Field>
+        <Field Name="VarWAllowFormat">
+          <DataField>VarWAllowFormat</DataField>
+        </Field>
+        <Field Name="VarTransportation">
+          <DataField>VarTransportation</DataField>
+        </Field>
+        <Field Name="VarTransportationFormat">
+          <DataField>VarTransportationFormat</DataField>
+        </Field>
+        <Field Name="VarHouse">
+          <DataField>VarHouse</DataField>
+        </Field>
+        <Field Name="VarHouseFormat">
+          <DataField>VarHouseFormat</DataField>
+        </Field>
+        <Field Name="VarClothing">
+          <DataField>VarClothing</DataField>
+        </Field>
+        <Field Name="VarClothingFormat">
+          <DataField>VarClothingFormat</DataField>
+        </Field>
+        <Field Name="VarInsur">
+          <DataField>VarInsur</DataField>
+        </Field>
+        <Field Name="VarInsurFormat">
+          <DataField>VarInsurFormat</DataField>
+        </Field>
+        <Field Name="VarMared">
+          <DataField>VarMared</DataField>
+        </Field>
+        <Field Name="VarMaredFormat">
+          <DataField>VarMaredFormat</DataField>
+        </Field>
+        <Field Name="VarMedAllow">
+          <DataField>VarMedAllow</DataField>
+        </Field>
+        <Field Name="VarMedAllowFormat">
+          <DataField>VarMedAllowFormat</DataField>
+        </Field>
+        <Field Name="VarOtherAllow">
+          <DataField>VarOtherAllow</DataField>
+        </Field>
+        <Field Name="VarOtherAllowFormat">
+          <DataField>VarOtherAllowFormat</DataField>
+        </Field>
+        <Field Name="VarBonus_Control1000000060">
+          <DataField>VarBonus_Control1000000060</DataField>
+        </Field>
+        <Field Name="VarBonus_Control1000000060Format">
+          <DataField>VarBonus_Control1000000060Format</DataField>
+        </Field>
+        <Field Name="VarWAllow_Control1000000061">
+          <DataField>VarWAllow_Control1000000061</DataField>
+        </Field>
+        <Field Name="VarWAllow_Control1000000061Format">
+          <DataField>VarWAllow_Control1000000061Format</DataField>
+        </Field>
+        <Field Name="VarCar_Control1000000062">
+          <DataField>VarCar_Control1000000062</DataField>
+        </Field>
+        <Field Name="VarCar_Control1000000062Format">
+          <DataField>VarCar_Control1000000062Format</DataField>
+        </Field>
+        <Field Name="VarFood_Control1000000063">
+          <DataField>VarFood_Control1000000063</DataField>
+        </Field>
+        <Field Name="VarFood_Control1000000063Format">
+          <DataField>VarFood_Control1000000063Format</DataField>
+        </Field>
+        <Field Name="VarAllow_Control1000000064">
+          <DataField>VarAllow_Control1000000064</DataField>
+        </Field>
+        <Field Name="VarAllow_Control1000000064Format">
+          <DataField>VarAllow_Control1000000064Format</DataField>
+        </Field>
+        <Field Name="VarScholar_Control1000000065">
+          <DataField>VarScholar_Control1000000065</DataField>
+        </Field>
+        <Field Name="VarScholar_Control1000000065Format">
+          <DataField>VarScholar_Control1000000065Format</DataField>
+        </Field>
+        <Field Name="VarBirth_Control1000000066">
+          <DataField>VarBirth_Control1000000066</DataField>
+        </Field>
+        <Field Name="VarBirth_Control1000000066Format">
+          <DataField>VarBirth_Control1000000066Format</DataField>
+        </Field>
+        <Field Name="VarDeathAllow_Control1000000067">
+          <DataField>VarDeathAllow_Control1000000067</DataField>
+        </Field>
+        <Field Name="VarDeathAllow_Control1000000067Format">
+          <DataField>VarDeathAllow_Control1000000067Format</DataField>
+        </Field>
+        <Field Name="VarTotalAp">
+          <DataField>VarTotalAp</DataField>
+        </Field>
+        <Field Name="VarTotalApFormat">
+          <DataField>VarTotalApFormat</DataField>
+        </Field>
+        <Field Name="VarRep_Control1000000069">
+          <DataField>VarRep_Control1000000069</DataField>
+        </Field>
+        <Field Name="VarRep_Control1000000069Format">
+          <DataField>VarRep_Control1000000069Format</DataField>
+        </Field>
+        <Field Name="VarFAllow_Control1000000070">
+          <DataField>VarFAllow_Control1000000070</DataField>
+        </Field>
+        <Field Name="VarFAllow_Control1000000070Format">
+          <DataField>VarFAllow_Control1000000070Format</DataField>
+        </Field>
+        <Field Name="VarTransportation_Control1000000071">
+          <DataField>VarTransportation_Control1000000071</DataField>
+        </Field>
+        <Field Name="VarTransportation_Control1000000071Format">
+          <DataField>VarTransportation_Control1000000071Format</DataField>
+        </Field>
+        <Field Name="VarHouse_Control1000000072">
+          <DataField>VarHouse_Control1000000072</DataField>
+        </Field>
+        <Field Name="VarHouse_Control1000000072Format">
+          <DataField>VarHouse_Control1000000072Format</DataField>
+        </Field>
+        <Field Name="VarClothing_Control1000000073">
+          <DataField>VarClothing_Control1000000073</DataField>
+        </Field>
+        <Field Name="VarClothing_Control1000000073Format">
+          <DataField>VarClothing_Control1000000073Format</DataField>
+        </Field>
+        <Field Name="VarInsur_Control1000000074">
+          <DataField>VarInsur_Control1000000074</DataField>
+        </Field>
+        <Field Name="VarInsur_Control1000000074Format">
+          <DataField>VarInsur_Control1000000074Format</DataField>
+        </Field>
+        <Field Name="VarMared_Control1000000075">
+          <DataField>VarMared_Control1000000075</DataField>
+        </Field>
+        <Field Name="VarMared_Control1000000075Format">
+          <DataField>VarMared_Control1000000075Format</DataField>
+        </Field>
+        <Field Name="VarMedAllow_Control1000000076">
+          <DataField>VarMedAllow_Control1000000076</DataField>
+        </Field>
+        <Field Name="VarMedAllow_Control1000000076Format">
+          <DataField>VarMedAllow_Control1000000076Format</DataField>
+        </Field>
+        <Field Name="VarOtherAllow_Control1000000077">
+          <DataField>VarOtherAllow_Control1000000077</DataField>
+        </Field>
+        <Field Name="VarOtherAllow_Control1000000077Format">
+          <DataField>VarOtherAllow_Control1000000077Format</DataField>
+        </Field>
+        <Field Name="VarTotalEx">
+          <DataField>VarTotalEx</DataField>
+        </Field>
+        <Field Name="VarTotalExFormat">
+          <DataField>VarTotalExFormat</DataField>
+        </Field>
+        <Field Name="VarEmplLineNo">
+          <DataField>VarEmplLineNo</DataField>
+        </Field>
+        <Field Name="VarEmplNo_Control1000000080">
+          <DataField>VarEmplNo_Control1000000080</DataField>
+        </Field>
+        <Field Name="NbofChilds">
+          <DataField>NbofChilds</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_City_">
+          <DataField>Employee__Arabic_City_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_District_">
+          <DataField>Employee__Arabic_District_</DataField>
+        </Field>
+        <Field Name="VarStMonth">
+          <DataField>VarStMonth</DataField>
+        </Field>
+        <Field Name="VarStYear">
+          <DataField>VarStYear</DataField>
+        </Field>
+        <Field Name="VarEndYear">
+          <DataField>VarEndYear</DataField>
+        </Field>
+        <Field Name="VarEndMonth">
+          <DataField>VarEndMonth</DataField>
+        </Field>
+        <Field Name="VarEndDay">
+          <DataField>VarEndDay</DataField>
+        </Field>
+        <Field Name="VarSeparated">
+          <DataField>VarSeparated</DataField>
+        </Field>
+        <Field Name="Employee__Mobile_Fax_No__">
+          <DataField>Employee__Mobile_Fax_No__</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Street_">
+          <DataField>Employee__Arabic_Street_</DataField>
+        </Field>
+        <Field Name="Employee__Mailbox_Area_">
+          <DataField>Employee__Mailbox_Area_</DataField>
+        </Field>
+        <Field Name="Employee__Arabic_Elimination">
+          <DataField>Employee__Arabic_Elimination</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="VarStDate">
+          <DataField>VarStDate</DataField>
+        </Field>
+        <Field Name="VarEndDate">
+          <DataField>VarEndDate</DataField>
+        </Field>
+        <Field Name="VarPerFinNo">
+          <DataField>VarPerFinNo</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption">
+          <DataField>EmptyStringCaption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000009">
+          <DataField>EmptyStringCaption_Control1000000009</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000008">
+          <DataField>EmptyStringCaption_Control1000000008</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000007">
+          <DataField>EmptyStringCaption_Control1000000007</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000011">
+          <DataField>EmptyStringCaption_Control1000000011</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000012">
+          <DataField>EmptyStringCaption_Control1000000012</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000208">
+          <DataField>EmptyStringCaption_Control1000000208</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000209">
+          <DataField>EmptyStringCaption_Control1000000209</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000210">
+          <DataField>EmptyStringCaption_Control1000000210</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000211">
+          <DataField>EmptyStringCaption_Control1000000211</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000212">
+          <DataField>EmptyStringCaption_Control1000000212</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000213">
+          <DataField>EmptyStringCaption_Control1000000213</DataField>
+        </Field>
+        <Field Name="V6Caption">
+          <DataField>V6Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000333">
+          <DataField>EmptyStringCaption_Control1000000333</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000334">
+          <DataField>EmptyStringCaption_Control1000000334</DataField>
+        </Field>
+        <Field Name="V360Caption">
+          <DataField>V360Caption</DataField>
+        </Field>
+        <Field Name="V350Caption">
+          <DataField>V350Caption</DataField>
+        </Field>
+        <Field Name="V340Caption">
+          <DataField>V340Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000339">
+          <DataField>EmptyStringCaption_Control1000000339</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000340">
+          <DataField>EmptyStringCaption_Control1000000340</DataField>
+        </Field>
+        <Field Name="V330Caption">
+          <DataField>V330Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000342">
+          <DataField>EmptyStringCaption_Control1000000342</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000345">
+          <DataField>EmptyStringCaption_Control1000000345</DataField>
+        </Field>
+        <Field Name="V310Caption">
+          <DataField>V310Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000350">
+          <DataField>EmptyStringCaption_Control1000000350</DataField>
+        </Field>
+        <Field Name="V300Caption">
+          <DataField>V300Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000355">
+          <DataField>EmptyStringCaption_Control1000000355</DataField>
+        </Field>
+        <Field Name="V260Caption">
+          <DataField>V260Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000360">
+          <DataField>EmptyStringCaption_Control1000000360</DataField>
+        </Field>
+        <Field Name="V250Caption">
+          <DataField>V250Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000365">
+          <DataField>EmptyStringCaption_Control1000000365</DataField>
+        </Field>
+        <Field Name="V240Caption">
+          <DataField>V240Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000370">
+          <DataField>EmptyStringCaption_Control1000000370</DataField>
+        </Field>
+        <Field Name="V230Caption">
+          <DataField>V230Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000376">
+          <DataField>EmptyStringCaption_Control1000000376</DataField>
+        </Field>
+        <Field Name="V220Caption">
+          <DataField>V220Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000381">
+          <DataField>EmptyStringCaption_Control1000000381</DataField>
+        </Field>
+        <Field Name="V210Caption">
+          <DataField>V210Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000386">
+          <DataField>EmptyStringCaption_Control1000000386</DataField>
+        </Field>
+        <Field Name="V200Caption">
+          <DataField>V200Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000391">
+          <DataField>EmptyStringCaption_Control1000000391</DataField>
+        </Field>
+        <Field Name="V190Caption">
+          <DataField>V190Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000407">
+          <DataField>EmptyStringCaption_Control1000000407</DataField>
+        </Field>
+        <Field Name="V180Caption">
+          <DataField>V180Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000413">
+          <DataField>EmptyStringCaption_Control1000000413</DataField>
+        </Field>
+        <Field Name="V170Caption">
+          <DataField>V170Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000423">
+          <DataField>EmptyStringCaption_Control1000000423</DataField>
+        </Field>
+        <Field Name="V160Caption">
+          <DataField>V160Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000425">
+          <DataField>EmptyStringCaption_Control1000000425</DataField>
+        </Field>
+        <Field Name="V150Caption">
+          <DataField>V150Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000431">
+          <DataField>EmptyStringCaption_Control1000000431</DataField>
+        </Field>
+        <Field Name="V140Caption">
+          <DataField>V140Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000437">
+          <DataField>EmptyStringCaption_Control1000000437</DataField>
+        </Field>
+        <Field Name="V130Caption">
+          <DataField>V130Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000443">
+          <DataField>EmptyStringCaption_Control1000000443</DataField>
+        </Field>
+        <Field Name="V120Caption">
+          <DataField>V120Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000449">
+          <DataField>EmptyStringCaption_Control1000000449</DataField>
+        </Field>
+        <Field Name="V110Caption">
+          <DataField>V110Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000455">
+          <DataField>EmptyStringCaption_Control1000000455</DataField>
+        </Field>
+        <Field Name="V100Caption">
+          <DataField>V100Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000461">
+          <DataField>EmptyStringCaption_Control1000000461</DataField>
+        </Field>
+        <Field Name="V1_Caption">
+          <DataField>V1_Caption</DataField>
+        </Field>
+        <Field Name="V2_Caption">
+          <DataField>V2_Caption</DataField>
+        </Field>
+        <Field Name="V3_Caption">
+          <DataField>V3_Caption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000465">
+          <DataField>EmptyStringCaption_Control1000000465</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000466">
+          <DataField>EmptyStringCaption_Control1000000466</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000467">
+          <DataField>EmptyStringCaption_Control1000000467</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000468">
+          <DataField>EmptyStringCaption_Control1000000468</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000469">
+          <DataField>EmptyStringCaption_Control1000000469</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000471">
+          <DataField>EmptyStringCaption_Control1000000471</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000472">
+          <DataField>EmptyStringCaption_Control1000000472</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000473">
+          <DataField>EmptyStringCaption_Control1000000473</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000474">
+          <DataField>EmptyStringCaption_Control1000000474</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000475">
+          <DataField>EmptyStringCaption_Control1000000475</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000476">
+          <DataField>EmptyStringCaption_Control1000000476</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000477">
+          <DataField>EmptyStringCaption_Control1000000477</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000478">
+          <DataField>EmptyStringCaption_Control1000000478</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000479">
+          <DataField>EmptyStringCaption_Control1000000479</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000480">
+          <DataField>EmptyStringCaption_Control1000000480</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000481">
+          <DataField>EmptyStringCaption_Control1000000481</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000484">
+          <DataField>EmptyStringCaption_Control1000000484</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000485">
+          <DataField>EmptyStringCaption_Control1000000485</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000486">
+          <DataField>EmptyStringCaption_Control1000000486</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000487">
+          <DataField>EmptyStringCaption_Control1000000487</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000488">
+          <DataField>EmptyStringCaption_Control1000000488</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000489">
+          <DataField>EmptyStringCaption_Control1000000489</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000490">
+          <DataField>EmptyStringCaption_Control1000000490</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000491">
+          <DataField>EmptyStringCaption_Control1000000491</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000492">
+          <DataField>EmptyStringCaption_Control1000000492</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000493">
+          <DataField>EmptyStringCaption_Control1000000493</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000498">
+          <DataField>EmptyStringCaption_Control1000000498</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000499">
+          <DataField>EmptyStringCaption_Control1000000499</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000500">
+          <DataField>EmptyStringCaption_Control1000000500</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000501">
+          <DataField>EmptyStringCaption_Control1000000501</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000502">
+          <DataField>EmptyStringCaption_Control1000000502</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000503">
+          <DataField>EmptyStringCaption_Control1000000503</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000507">
+          <DataField>EmptyStringCaption_Control1000000507</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000508">
+          <DataField>EmptyStringCaption_Control1000000508</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000509">
+          <DataField>EmptyStringCaption_Control1000000509</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000510">
+          <DataField>EmptyStringCaption_Control1000000510</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000511">
+          <DataField>EmptyStringCaption_Control1000000511</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000512">
+          <DataField>EmptyStringCaption_Control1000000512</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000099">
+          <DataField>EmptyStringCaption_Control1000000099</DataField>
+        </Field>
+        <Field Name="XCaption">
+          <DataField>XCaption</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000078">
+          <DataField>EmptyStringCaption_Control1000000078</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000082">
+          <DataField>EmptyStringCaption_Control1000000082</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000083">
+          <DataField>EmptyStringCaption_Control1000000083</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000084">
+          <DataField>EmptyStringCaption_Control1000000084</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000086">
+          <DataField>EmptyStringCaption_Control1000000086</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000088">
+          <DataField>EmptyStringCaption_Control1000000088</DataField>
+        </Field>
+        <Field Name="EmptyStringCaption_Control1000000090">
+          <DataField>EmptyStringCaption_Control1000000090</DataField>
+        </Field>
+        <Field Name="Employee_No_">
+          <DataField>Employee_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

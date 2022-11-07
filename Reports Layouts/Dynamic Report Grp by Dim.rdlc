@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="EmployeeNo_PayrollLedgerEntry">
+          <DataField>EmployeeNo_PayrollLedgerEntry</DataField>
+        </Field>
+        <Field Name="FirstName_PayrollLedgerEntry">
+          <DataField>FirstName_PayrollLedgerEntry</DataField>
+        </Field>
+        <Field Name="LastName_PayrollLedgerEntry">
+          <DataField>LastName_PayrollLedgerEntry</DataField>
+        </Field>
+        <Field Name="NetPay_PayrollLedgerEntry">
+          <DataField>NetPay_PayrollLedgerEntry</DataField>
+        </Field>
+        <Field Name="NetPay_PayrollLedgerEntryFormat">
+          <DataField>NetPay_PayrollLedgerEntryFormat</DataField>
+        </Field>
+        <Field Name="NetPay">
+          <DataField>NetPay</DataField>
+        </Field>
+        <Field Name="NetPayFormat">
+          <DataField>NetPayFormat</DataField>
+        </Field>
+        <Field Name="FreePay">
+          <DataField>FreePay</DataField>
+        </Field>
+        <Field Name="FreePayFormat">
+          <DataField>FreePayFormat</DataField>
+        </Field>
+        <Field Name="TotalNetPay">
+          <DataField>TotalNetPay</DataField>
+        </Field>
+        <Field Name="TotalNetPayFormat">
+          <DataField>TotalNetPayFormat</DataField>
+        </Field>
+        <Field Name="DimensionValueCode">
+          <DataField>DimensionValueCode</DataField>
+        </Field>
+        <Field Name="DimensionValueName">
+          <DataField>DimensionValueName</DataField>
+        </Field>
+        <Field Name="GroupBy">
+          <DataField>GroupBy</DataField>
+        </Field>
+        <Field Name="FromDate">
+          <DataField>FromDate</DataField>
+        </Field>
+        <Field Name="TillDate">
+          <DataField>TillDate</DataField>
+        </Field>
+        <Field Name="Cnt">
+          <DataField>Cnt</DataField>
+        </Field>
+        <Field Name="EmploymentDate">
+          <DataField>EmploymentDate</DataField>
+        </Field>
+        <Field Name="TerminationDate">
+          <DataField>TerminationDate</DataField>
+        </Field>
+        <Field Name="GrandTotalDeduction">
+          <DataField>GrandTotalDeduction</DataField>
+        </Field>
+        <Field Name="GrandTotalDeductionFormat">
+          <DataField>GrandTotalDeductionFormat</DataField>
+        </Field>
+        <Field Name="GrandTotalAddition">
+          <DataField>GrandTotalAddition</DataField>
+        </Field>
+        <Field Name="GrandTotalAdditionFormat">
+          <DataField>GrandTotalAdditionFormat</DataField>
+        </Field>
+        <Field Name="TAdditions">
+          <DataField>TAdditions</DataField>
+        </Field>
+        <Field Name="TAdditionsFormat">
+          <DataField>TAdditionsFormat</DataField>
+        </Field>
+        <Field Name="TDeductions">
+          <DataField>TDeductions</DataField>
+        </Field>
+        <Field Name="TDeductionsFormat">
+          <DataField>TDeductionsFormat</DataField>
+        </Field>
+        <Field Name="Code_PayElement">
+          <DataField>Code_PayElement</DataField>
+        </Field>
+        <Field Name="Description_PayElement">
+          <DataField>Description_PayElement</DataField>
+        </Field>
+        <Field Name="ShowinReports_PayElement">
+          <DataField>ShowinReports_PayElement</DataField>
+        </Field>
+        <Field Name="CalculatedAmount_PayElement">
+          <DataField>CalculatedAmount_PayElement</DataField>
+        </Field>
+        <Field Name="CalculatedAmount_PayElementFormat">
+          <DataField>CalculatedAmount_PayElementFormat</DataField>
+        </Field>
+        <Field Name="OrderNo_PayElement">
+          <DataField>OrderNo_PayElement</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

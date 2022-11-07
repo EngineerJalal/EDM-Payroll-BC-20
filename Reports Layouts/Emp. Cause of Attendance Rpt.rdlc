@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>d061ea42-804e-46cb-b3a2-039e76c7f730</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixCorner>
+              <TablixCornerRows>
+                <TablixCornerRow>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="Textbox4">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value EvaluationMode="Auto" />
+                                <Style />
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox4</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </RightBorder>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                </TablixCornerRow>
+              </TablixCornerRows>
+            </TablixCorner>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>0.70834in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Round(SUM(Fields!Value_EmployeeJournalLine.Value),2)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="CauseofAbsenceCode_EmployeeJournalLine">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!CauseofAbsenceCode_EmployeeJournalLine.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!CauseofAbsenceCode_EmployeeJournalLine.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>0.25in</Size>
+                    <CellContents>
+                      <Textbox Name="CauseofAbsenceCode_EmployeeJournalLine">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value EvaluationMode="Auto">=Fields!CauseofAbsenceCode_EmployeeJournalLine.Value</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>CauseofAbsenceCode_EmployeeJournalLine</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </RightBorder>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="TransactionDate_EmployeeJournalLine">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!TransactionDate_EmployeeJournalLine.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!TransactionDate_EmployeeJournalLine.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>1.11458in</Size>
+                    <CellContents>
+                      <Textbox Name="TransactionDate_EmployeeJournalLine">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value EvaluationMode="Auto">=Fields!TransactionDate_EmployeeJournalLine.Value</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Format>d</Format>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>TransactionDate_EmployeeJournalLine</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </RightBorder>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>0.1375in</Top>
+            <Left>0.05in</Left>
+            <Height>0.5in</Height>
+            <Width>1.82292in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1.651cm</Height>
+        <Style />
+      </Body>
+      <Width>11.13367cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>3.59833cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox5">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="Employee Attendence"</Value>
+                      <Style>
+                        <FontSize>18pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox5</rd:DefaultName>
+              <Height>0.39014in</Height>
+              <Width>2.89583in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox6">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Globals!ExecutionTime</Value>
+                      <Style>
+                        <Format>D</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox6</rd:DefaultName>
+              <Top>0.40403in</Top>
+              <Left>0.05in</Left>
+              <Height>0.25in</Height>
+              <Width>2.84583in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="Status"</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>1.83763cm</Top>
+              <Left>0.127cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.98438cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Fields!FilterStat.Value</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>1.83763cm</Top>
+              <Left>2.35126cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.61938cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox7">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="From Date"</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>2.56618cm</Top>
+              <Left>0.127cm</Left>
+              <Height>0.6cm</Height>
+              <Width>1.98437cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Fields!FDateFilter.Value</Value>
+                      <Style>
+                        <Format>d</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>2.56618cm</Top>
+              <Left>2.35126cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.61938cm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="Cause Of Absence"</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>1.83763cm</Top>
+              <Left>5.26873cm</Left>
+              <Height>0.6cm</Height>
+              <Width>3.06917cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox10">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Fields!FilterCOA.Value</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>1.83763cm</Top>
+              <Left>8.51429cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.61938cm</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox11">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">="To Date"</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>2.56618cm</Top>
+              <Left>5.26874cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.61938cm</Width>
+              <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Fields!TDateFilter.Value</Value>
+                      <Style>
+                        <Format>d</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>2.61402cm</Top>
+              <Left>8.51429cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.61938cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageHeight>21.59cm</PageHeight>
+        <PageWidth>27.94cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TransactionType_EmployeeJournalLine">
+          <DataField>TransactionType_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EmployeeNo_EmployeeJournalLine">
+          <DataField>EmployeeNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EntryNo_EmployeeJournalLine">
+          <DataField>EntryNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EmployeeStatus_EmployeeJournalLine">
+          <DataField>EmployeeStatus_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="DocumentStatus_EmployeeJournalLine">
+          <DataField>DocumentStatus_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OpenedBy_EmployeeJournalLine">
+          <DataField>OpenedBy_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OpenedDate_EmployeeJournalLine">
+          <DataField>OpenedDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ReleasedBy_EmployeeJournalLine">
+          <DataField>ReleasedBy_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ReleasedDate_EmployeeJournalLine">
+          <DataField>ReleasedDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ApprovedBy_EmployeeJournalLine">
+          <DataField>ApprovedBy_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ApprovedDate_EmployeeJournalLine">
+          <DataField>ApprovedDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="StartingDate_EmployeeJournalLine">
+          <DataField>StartingDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Currency_EmployeeJournalLine">
+          <DataField>Currency_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Description_EmployeeJournalLine">
+          <DataField>Description_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="MoreInformation_EmployeeJournalLine">
+          <DataField>MoreInformation_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Value_EmployeeJournalLine">
+          <DataField>Value_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Value_EmployeeJournalLineFormat">
+          <DataField>Value_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="ExamDate_EmployeeJournalLine">
+          <DataField>ExamDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AbsencePhoneNo_EmployeeJournalLine">
+          <DataField>AbsencePhoneNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AbsenceAddress_EmployeeJournalLine">
+          <DataField>AbsenceAddress_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="TransactionDate_EmployeeJournalLine">
+          <DataField>TransactionDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="MedicalAllowanceGroup_EmployeeJournalLine">
+          <DataField>MedicalAllowanceGroup_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="MedicalExamsCount_EmployeeJournalLine">
+          <DataField>MedicalExamsCount_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="MedicalSubGroupFilter_EmployeeJournalLine">
+          <DataField>MedicalSubGroupFilter_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="CauseofAbsenceCode_EmployeeJournalLine">
+          <DataField>CauseofAbsenceCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ShortcutDimension1Code_EmployeeJournalLine">
+          <DataField>ShortcutDimension1Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ShortcutDimension2Code_EmployeeJournalLine">
+          <DataField>ShortcutDimension2Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EndingDate_EmployeeJournalLine">
+          <DataField>EndingDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="TrainingNo_EmployeeJournalLine">
+          <DataField>TrainingNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EvaluationRate_EmployeeJournalLine">
+          <DataField>EvaluationRate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EvaluationRate_EmployeeJournalLineFormat">
+          <DataField>EvaluationRate_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="FromTime_EmployeeJournalLine">
+          <DataField>FromTime_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ToTime_EmployeeJournalLine">
+          <DataField>ToTime_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="UnitofMeasureCode_EmployeeJournalLine">
+          <DataField>UnitofMeasureCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Type_EmployeeJournalLine">
+          <DataField>Type_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="JobPositionCode_EmployeeJournalLine">
+          <DataField>JobPositionCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldEmployeeStatus_EmployeeJournalLine">
+          <DataField>OldEmployeeStatus_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldShortcutDimension1Code_EmployeeJournalLine">
+          <DataField>OldShortcutDimension1Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldShortcutDimension2Code_EmployeeJournalLine">
+          <DataField>OldShortcutDimension2Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldJobPositionCode_EmployeeJournalLine">
+          <DataField>OldJobPositionCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="PerformanceCode_EmployeeJournalLine">
+          <DataField>PerformanceCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldEmploymentType_EmployeeJournalLine">
+          <DataField>OldEmploymentType_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EmploymentTypeCode_EmployeeJournalLine">
+          <DataField>EmploymentTypeCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Converted_EmployeeJournalLine">
+          <DataField>Converted_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AffectWorkDays_EmployeeJournalLine">
+          <DataField>AffectWorkDays_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AffectAttendanceDays_EmployeeJournalLine">
+          <DataField>AffectAttendanceDays_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AbsenceTransactionType_EmployeeJournalLine">
+          <DataField>AbsenceTransactionType_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AssociatePayElement_EmployeeJournalLine">
+          <DataField>AssociatePayElement_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Processed_EmployeeJournalLine">
+          <DataField>Processed_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="HusbandParalysed_EmployeeJournalLine">
+          <DataField>HusbandParalysed_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SpouseSecured_EmployeeJournalLine">
+          <DataField>SpouseSecured_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="NoofChildren_EmployeeJournalLine">
+          <DataField>NoofChildren_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldNoofChildren_EmployeeJournalLine">
+          <DataField>OldNoofChildren_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SocialStatus_EmployeeJournalLine">
+          <DataField>SocialStatus_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldSocialStatus_EmployeeJournalLine">
+          <DataField>OldSocialStatus_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="CalculatedValue_EmployeeJournalLine">
+          <DataField>CalculatedValue_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="CalculatedValue_EmployeeJournalLineFormat">
+          <DataField>CalculatedValue_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="OldBasicPay_EmployeeJournalLine">
+          <DataField>OldBasicPay_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldBasicPay_EmployeeJournalLineFormat">
+          <DataField>OldBasicPay_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="OldAdditionalSalary_EmployeeJournalLine">
+          <DataField>OldAdditionalSalary_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldAdditionalSalary_EmployeeJournalLineFormat">
+          <DataField>OldAdditionalSalary_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="BasicPay_EmployeeJournalLine">
+          <DataField>BasicPay_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="BasicPay_EmployeeJournalLineFormat">
+          <DataField>BasicPay_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="AdditionalSalary_EmployeeJournalLine">
+          <DataField>AdditionalSalary_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="AdditionalSalary_EmployeeJournalLineFormat">
+          <DataField>AdditionalSalary_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="Entitled_EmployeeJournalLine">
+          <DataField>Entitled_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Reseted_EmployeeJournalLine">
+          <DataField>Reseted_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EntitledValue_EmployeeJournalLine">
+          <DataField>EntitledValue_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EntitledValue_EmployeeJournalLineFormat">
+          <DataField>EntitledValue_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="ResetedValue_EmployeeJournalLine">
+          <DataField>ResetedValue_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ResetedValue_EmployeeJournalLineFormat">
+          <DataField>ResetedValue_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="ConvertedValue_EmployeeJournalLine">
+          <DataField>ConvertedValue_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ConvertedValue_EmployeeJournalLineFormat">
+          <DataField>ConvertedValue_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="ProcessedDate_EmployeeJournalLine">
+          <DataField>ProcessedDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="UnpaidPeriod_EmployeeJournalLine">
+          <DataField>UnpaidPeriod_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="PayrollLedgerEntryNo_EmployeeJournalLine">
+          <DataField>PayrollLedgerEntryNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="DayOff_EmployeeJournalLine">
+          <DataField>DayOff_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldDeclared_EmployeeJournalLine">
+          <DataField>OldDeclared_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldForeigner_EmployeeJournalLine">
+          <DataField>OldForeigner_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldEmployeeCategoryCode_EmployeeJournalLine">
+          <DataField>OldEmployeeCategoryCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Declared_EmployeeJournalLine">
+          <DataField>Declared_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Foreigner_EmployeeJournalLine">
+          <DataField>Foreigner_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EmployeeCategoryCode_EmployeeJournalLine">
+          <DataField>EmployeeCategoryCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="EmploymentDate_EmployeeJournalLine">
+          <DataField>EmploymentDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldEmploymentDate_EmployeeJournalLine">
+          <DataField>OldEmploymentDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="JobTitleCode_EmployeeJournalLine">
+          <DataField>JobTitleCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldJobTitleCode_EmployeeJournalLine">
+          <DataField>OldJobTitleCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapNo_EmployeeJournalLine">
+          <DataField>SwapNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapEmployeeNo_EmployeeJournalLine">
+          <DataField>SwapEmployeeNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapFromDate_EmployeeJournalLine">
+          <DataField>SwapFromDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToDate_EmployeeJournalLine">
+          <DataField>SwapToDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapFromWorkingShiftCode_EmployeeJournalLine">
+          <DataField>SwapFromWorkingShiftCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToWorkingShiftCode_EmployeeJournalLine">
+          <DataField>SwapToWorkingShiftCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapFromShiftGroupCode_EmployeeJournalLine">
+          <DataField>SwapFromShiftGroupCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToShiftGroupCode_EmployeeJournalLine">
+          <DataField>SwapToShiftGroupCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="PensionSchemeNo_EmployeeJournalLine">
+          <DataField>PensionSchemeNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SalaryIncreaseAmount_EmployeeJournalLine">
+          <DataField>SalaryIncreaseAmount_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SalaryIncreaseAmount_EmployeeJournalLineFormat">
+          <DataField>SalaryIncreaseAmount_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="SalaryIncreasePolicyDate_EmployeeJournalLine">
+          <DataField>SalaryIncreasePolicyDate_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SalaryType_EmployeeJournalLine">
+          <DataField>SalaryType_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RelativeCode_EmployeeJournalLine">
+          <DataField>RelativeCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Split_EmployeeJournalLine">
+          <DataField>Split_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="PayrollGroupCode_EmployeeJournalLine">
+          <DataField>PayrollGroupCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="PayFrequency_EmployeeJournalLine">
+          <DataField>PayFrequency_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RoomType_EmployeeJournalLine">
+          <DataField>RoomType_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RoomNo_EmployeeJournalLine">
+          <DataField>RoomNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ExitRoom_EmployeeJournalLine">
+          <DataField>ExitRoom_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="CompanyOrganizationNo_EmployeeJournalLine">
+          <DataField>CompanyOrganizationNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="OldCompanyOrganizationNo_EmployeeJournalLine">
+          <DataField>OldCompanyOrganizationNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="InsuranceCode_EmployeeJournalLine">
+          <DataField>InsuranceCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="Reversed_EmployeeJournalLine">
+          <DataField>Reversed_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="ReversedEntryNo_EmployeeJournalLine">
+          <DataField>ReversedEntryNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToShortcutDim1Code_EmployeeJournalLine">
+          <DataField>SwapToShortcutDim1Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToShortcutDim2Code_EmployeeJournalLine">
+          <DataField>SwapToShortcutDim2Code_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SwapToBaseCalendarCode_EmployeeJournalLine">
+          <DataField>SwapToBaseCalendarCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="BaseCalendarCode_EmployeeJournalLine">
+          <DataField>BaseCalendarCode_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="WTREntryNo_EmployeeJournalLine">
+          <DataField>WTREntryNo_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RoundingofCalculatedValue_EmployeeJournalLine">
+          <DataField>RoundingofCalculatedValue_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RoundingofCalculatedValue_EmployeeJournalLineFormat">
+          <DataField>RoundingofCalculatedValue_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="RoundingAddition_EmployeeJournalLine">
+          <DataField>RoundingAddition_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="RoundingAddition_EmployeeJournalLineFormat">
+          <DataField>RoundingAddition_EmployeeJournalLineFormat</DataField>
+        </Field>
+        <Field Name="SystemInsert_EmployeeJournalLine">
+          <DataField>SystemInsert_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="SupplementPeriod_EmployeeJournalLine">
+          <DataField>SupplementPeriod_EmployeeJournalLine</DataField>
+        </Field>
+        <Field Name="FilterStat">
+          <DataField>FilterStat</DataField>
+        </Field>
+        <Field Name="FilterCOA">
+          <DataField>FilterCOA</DataField>
+        </Field>
+        <Field Name="FDateFilter">
+          <DataField>FDateFilter</DataField>
+        </Field>
+        <Field Name="TDateFilter">
+          <DataField>TDateFilter</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

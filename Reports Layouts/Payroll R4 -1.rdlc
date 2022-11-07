@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Wife_Hsband_Name">
+          <DataField>Wife_Hsband_Name</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Father_Name">
+          <DataField>Wife_Hsband_Father_Name</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Nationality">
+          <DataField>Wife_Hsband_Nationality</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Birthdate">
+          <DataField>Wife_Hsband_Birthdate</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Registry_No">
+          <DataField>Wife_Hsband_Registry_No</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Registry_Place">
+          <DataField>Wife_Hsband_Registry_Place</DataField>
+        </Field>
+        <Field Name="Family_Before_Marriage">
+          <DataField>Family_Before_Marriage</DataField>
+        </Field>
+        <Field Name="Mother_Family_Before_Marriage">
+          <DataField>Mother_Family_Before_Marriage</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Birth_Place">
+          <DataField>Wife_Hsband_Birth_Place</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Card_No">
+          <DataField>Wife_Hsband_Card_No</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Working">
+          <DataField>Wife_Hsband_Working</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Working_Place">
+          <DataField>Wife_Hsband_Working_Place</DataField>
+        </Field>
+        <Field Name="Wife_Hsband_Registration_No">
+          <DataField>Wife_Hsband_Registration_No</DataField>
+        </Field>
+        <Field Name="CompanyInformation__Arabic_Name_">
+          <DataField>CompanyInformation__Arabic_Name_</DataField>
+        </Field>
+        <Field Name="CompanyInformation__Arabic_Trading_Name_">
+          <DataField>CompanyInformation__Arabic_Trading_Name_</DataField>
+        </Field>
+        <Field Name="CompanyInformation__Registration_No__">
+          <DataField>CompanyInformation__Registration_No__</DataField>
+        </Field>
+        <Field Name="No_Employee">
+          <DataField>No_Employee</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Name_">
+          <DataField>Employee_Employee__Arabic_Name_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_First_Name_">
+          <DataField>Employee_Employee__Arabic_First_Name_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Middle_Name_">
+          <DataField>Employee_Employee__Arabic_Middle_Name_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Place_of_Birth_">
+          <DataField>Employee_Employee__Arabic_Place_of_Birth_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Last_Name_">
+          <DataField>Employee_Employee__Arabic_Last_Name_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Mother_Name_">
+          <DataField>Employee_Employee__Arabic_Mother_Name_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Nationality_">
+          <DataField>Employee_Employee__Arabic_Nationality_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Registeration_Place_">
+          <DataField>Employee_Employee__Arabic_Registeration_Place_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Building_">
+          <DataField>Employee_Employee__Arabic_Building_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Street_">
+          <DataField>Employee_Employee__Arabic_Street_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Governorate_">
+          <DataField>Employee_Employee__Arabic_Governorate_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Elimination_">
+          <DataField>Employee_Employee__Arabic_Elimination_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_MailBox_Area_">
+          <DataField>Employee_Employee__Arabic_MailBox_Area_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Floor_">
+          <DataField>Employee_Employee__Arabic_Floor_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Land_Area_">
+          <DataField>Employee_Employee__Arabic_Land_Area_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_District_">
+          <DataField>Employee_Employee__Arabic_District_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Government_ID_No__">
+          <DataField>Employee_Employee__Government_ID_No__</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Register_No__">
+          <DataField>Employee_Employee__Register_No__</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Mailbox_ID_">
+          <DataField>Employee_Employee__Mailbox_ID_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__E_Mail_">
+          <DataField>Employee_Employee__E_Mail_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__No_of_Children_">
+          <DataField>Employee_Employee__No_of_Children_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_City_">
+          <DataField>Employee_Employee__Arabic_City_</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Phone_No__">
+          <DataField>Employee_Employee__Phone_No__</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Arabic_Land_Area__No__">
+          <DataField>Employee_Employee__Arabic_Land_Area__No__</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Fax_No__">
+          <DataField>Employee_Employee__Fax_No__</DataField>
+        </Field>
+        <Field Name="Employee_Employee__Mobile_Phone_No__">
+          <DataField>Employee_Employee__Mobile_Phone_No__</DataField>
+        </Field>
+        <Field Name="RegisterNo_Employee">
+          <DataField>RegisterNo_Employee</DataField>
+        </Field>
+        <Field Name="GovernmentIDNo_Employee">
+          <DataField>GovernmentIDNo_Employee</DataField>
+        </Field>
+        <Field Name="EmployeeRelative__Personal_Register_No__">
+          <DataField>EmployeeRelative__Personal_Register_No__</DataField>
+        </Field>
+        <Field Name="Nationality">
+          <DataField>Nationality</DataField>
+        </Field>
+        <Field Name="Working_1_">
+          <DataField>Working_1_</DataField>
+        </Field>
+        <Field Name="Working_2_">
+          <DataField>Working_2_</DataField>
+        </Field>
+        <Field Name="RelativeCompanyName">
+          <DataField>RelativeCompanyName</DataField>
+        </Field>
+        <Field Name="Fname">
+          <DataField>Fname</DataField>
+        </Field>
+        <Field Name="Mname">
+          <DataField>Mname</DataField>
+        </Field>
+        <Field Name="Lname">
+          <DataField>Lname</DataField>
+        </Field>
+        <Field Name="IDNb">
+          <DataField>IDNb</DataField>
+        </Field>
+        <Field Name="PlaceOfBirth">
+          <DataField>PlaceOfBirth</DataField>
+        </Field>
+        <Field Name="MotherName">
+          <DataField>MotherName</DataField>
+        </Field>
+        <Field Name="RelativeFinanceNb">
+          <DataField>RelativeFinanceNb</DataField>
+        </Field>
+        <Field Name="GenderEmp_1_">
+          <DataField>GenderEmp_1_</DataField>
+        </Field>
+        <Field Name="GenderEmp_2_">
+          <DataField>GenderEmp_2_</DataField>
+        </Field>
+        <Field Name="SocialStatus_1_">
+          <DataField>SocialStatus_1_</DataField>
+        </Field>
+        <Field Name="SocialStatus_2_">
+          <DataField>SocialStatus_2_</DataField>
+        </Field>
+        <Field Name="SocialStatus_3_">
+          <DataField>SocialStatus_3_</DataField>
+        </Field>
+        <Field Name="SocialStatus_4_">
+          <DataField>SocialStatus_4_</DataField>
+        </Field>
+        <Field Name="EmpYearOfBirth">
+          <DataField>EmpYearOfBirth</DataField>
+        </Field>
+        <Field Name="EmpMonthOfBirth">
+          <DataField>EmpMonthOfBirth</DataField>
+        </Field>
+        <Field Name="EmpDayOfBirth">
+          <DataField>EmpDayOfBirth</DataField>
+        </Field>
+        <Field Name="RelYearOfBirth">
+          <DataField>RelYearOfBirth</DataField>
+        </Field>
+        <Field Name="RelMonthOfBirth">
+          <DataField>RelMonthOfBirth</DataField>
+        </Field>
+        <Field Name="RelDayOfBirth">
+          <DataField>RelDayOfBirth</DataField>
+        </Field>
+        <Field Name="MonthlyPay">
+          <DataField>MonthlyPay</DataField>
+        </Field>
+        <Field Name="InvYear">
+          <DataField>InvYear</DataField>
+        </Field>
+        <Field Name="InvMonth">
+          <DataField>InvMonth</DataField>
+        </Field>
+        <Field Name="InvDay">
+          <DataField>InvDay</DataField>
+        </Field>
+        <Field Name="Count">
+          <DataField>Count</DataField>
+        </Field>
+        <Field Name="CompRegNo">
+          <DataField>CompRegNo</DataField>
+        </Field>
+        <Field Name="EmpRegNo">
+          <DataField>EmpRegNo</DataField>
+        </Field>
+        <Field Name="RelRegNo">
+          <DataField>RelRegNo</DataField>
+        </Field>
+        <Field Name="EmpFName">
+          <DataField>EmpFName</DataField>
+        </Field>
+        <Field Name="EmpMName">
+          <DataField>EmpMName</DataField>
+        </Field>
+        <Field Name="EmpLName">
+          <DataField>EmpLName</DataField>
+        </Field>
+        <Field Name="EmploymentDate_Employee">
+          <DataField>EmploymentDate_Employee</DataField>
+        </Field>
+        <Field Name="VAL">
+          <DataField>VAL</DataField>
+        </Field>
+        <Field Name="RelExempt">
+          <DataField>RelExempt</DataField>
+        </Field>
+        <Field Name="RelExemptFormat">
+          <DataField>RelExemptFormat</DataField>
+        </Field>
+        <Field Name="ArabicFirstName_EmployeeRelative">
+          <DataField>ArabicFirstName_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="ArabicLastName_EmployeeRelative">
+          <DataField>ArabicLastName_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="Student_EmployeeRelative">
+          <DataField>Student_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="Sex_EmployeeRelative">
+          <DataField>Sex_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="SocialStatus_EmployeeRelative">
+          <DataField>SocialStatus_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="BirthDate_EmployeeRelative">
+          <DataField>BirthDate_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="RelativeCode_EmployeeRelative">
+          <DataField>RelativeCode_EmployeeRelative</DataField>
+        </Field>
+        <Field Name="ArabicGender_EmployeeRelative">
+          <DataField>ArabicGender_EmployeeRelative</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
